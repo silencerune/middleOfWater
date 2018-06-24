@@ -1,14 +1,46 @@
 app.factory('southCharatureDetail', () => {
     var south = [
         {
-            name: "",
-            img: '',
-            discrip: ` `,
+            name: "朱 一貴",
+            img: 'Img/head/south00-master.png',
+            discrip: `
+南災禍主，紅衣厲鬼，溺女嬰的犧牲者，\n
+是謝誓鳴在嘉義任職城隍時，為了抵禦年災而扶植的災禍主，\n
+其力量能切穿白鱗的鱗片，\n
+由於心智停留在幼年，對好壞的準則只有一條，\n
+『欺負自己人的，全是壞人』。\n
+朱一貴事件後，因常被人搞混而困擾著。\n
+災保區為  嘉義大林\n
+
+            `,
         }, {
-            name: "",
-            img: '',
-            discrip: ` `,
+            name: "洪 星軌",
+            img: 'Img/head/south-sin.png',
+            discrip: `
+零期仙班出身，官位孟婆，溺女嬰靈的監護人，\n
+由於本為戲班長子，對照顧幼童很有一套。\n
+在誓鳴的贊助下，擁有個人戲班，自己則為旦的主擔。\n
+
+            `,
+        }, {
+            name: "竹青",
+            img: 'Img/head/south-bamboo.png',
+            discrip: `
+半仙半年，台南府城隍，台灣三大城隍之一，\n
+仙籍視其為恥辱，不斷地向外流放，\n
+雖為黃眸，但從未食仙啖人，\n
+仙的血統被宮廟加強，使其未曾感受過飢餓，\n
+然而平衡在被趕出府城隍廟後，一次爆發，\n
+也發生了震驚神話的府城隍事件\n
+            `,
+        }, {
+            name: "陳 念澄",
+            img: 'Img/head/south00-chang.png',
+            discrip: ` 
+物妖，町中的嘉義，生於嘉義民兵事件。\n
+            `,
         },
+
 
 
 

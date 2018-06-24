@@ -4,6 +4,12 @@
   background-color:black;
  
 }
+.linkcomic{
+  color:wheat;
+}
+.linkcomic:link {
+  color: red;
+}
 .header>.innerword{
   background-color:white;
   width:20px

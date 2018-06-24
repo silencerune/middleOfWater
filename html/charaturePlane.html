@@ -4,12 +4,15 @@
 
     </div>
     <!-- <div class="charapicker"> -->
-    <img class="charapicker" ng-class="sparte?'charapickeractive':''" src="{{north[referindex]['img']}}" />
+    <img ng-if="north[referindex]['bodyimg']" class="charapicker" ng-class="sparte?'charapickeractive':''" src="{{north[referindex]['bodyimg']}}"
+    />
+    <img ng-if="!north[referindex]['bodyimg']" class="charapicker" ng-class="sparte?'charapickeractive':''" src="{{north[referindex]['img']}}"
+    />
     <!-- </div> -->
     <div class="closeBt" ng-if="sparte" ng-click="doClose()">
         ×
     </div>
-    <div class="charaturename" ng-if="sparte">{{north[referindex]['name']}}</div>
+    <div class="charaturename" ng-if="sparte" ng-click="doClose()">{{north[referindex]['name']}}</div>
     <div class="charamsg " ng-class="sparte?'charamsgactive':''">
         <pre>{{north[referindex]['discrip']}}</pre>
     </div>

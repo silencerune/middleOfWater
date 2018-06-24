@@ -57,7 +57,7 @@
     position: absolute;
     top:65px;
     width:0vw;
-    height: 70%;
+    height:auto;
     margin:1%;
     color: wheat;
     background-color:#3f778f;
@@ -101,9 +101,10 @@
     font-family:'標楷體';
     font-size:20px;
     color:red;
-    transition: background-color 1s,font-size 1s ,transform 1s ,color 1s linear ;
+    transition: background-color 1s,font-size 1s ,transform 1s ,color 1s linear,width 1s linear ;
 }
 .picback:hover > .innerlater{
+    width:160px;
     transform:translatey(-20px);
     font-size:30px;
     background-color:white;
@@ -142,7 +143,10 @@
     top: auto;
     }
     .charaturename{
-        float:none;
+        display: block;
+        height: auto;
+        position: relative;
+        margin-left: 0px;
     }
     /* .msgblock{
         width:300px;

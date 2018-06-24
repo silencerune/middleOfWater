@@ -13,7 +13,7 @@ app.directive("selectElement", () => {
 app.controller("selectElementController", ($rootScope, $scope, selectShareDate) => {
     $scope.story = ['竊凝語', '屏幕那端', '短篇集']
     $scope.select = {
-        title: ['North', 'West', 'South', 'East'],
+        title: ['North', 'West', 'South', 'East', 'Police'],
     }
     $rootScope.showNoti = true;
 

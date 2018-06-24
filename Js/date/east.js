@@ -2,7 +2,7 @@ app.factory('eastCharatureDetail', () => {
     var east = [
         {
             name: "希．瑪拉歐斯",
-            img: 'img/east-master.png',
+            img: 'Img/east-master.png',
             discrip: `
 東災禍主，珠光鳳蝶，達悟族傳說中的惡靈，\n
 曾有人用身體、名字、拼板舟......等二十一個項目\n

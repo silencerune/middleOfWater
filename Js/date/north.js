@@ -1,7 +1,7 @@
 app.factory('northCharatureDetail', () => {
     var north = [{
         name: "白鱗",
-        img: 'img/north00-master.png',
+        img: 'Img/north00-master.png',
         discrip: `
 北災禍主，噬神種年獸，鱗片為白色，\n
 賭性堅強，而且賭技跟運氣都不錯，\n
@@ -14,7 +14,7 @@ app.factory('northCharatureDetail', () => {
         `,
     }, {
         name: "鴉青",
-        img: 'img/north02-yachin.png',
+        img: 'Img/north02-yachin.png',
         discrip: `
 北災禍主第二候補，擺盪種年獸，鱗片為鴉青色，\n
 和另外兩個黃眸年相比，行事比較保守，
@@ -22,7 +22,7 @@ app.factory('northCharatureDetail', () => {
 `,
     }, {
         name: "藕荷",
-        img: 'img/north01-yachin.png',
+        img: 'Img/north01-yachin.png',
         discrip: `
 北災禍第一候補，擺盪種年獸，鱗片為藕荷色，\n
 和鴉清為雙子兄妹，但力量比較強，\n
@@ -30,7 +30,7 @@ app.factory('northCharatureDetail', () => {
 `,
     }, {
         name: "謝誓鳴",
-        img: 'img/north-hsies.png',
+        img: 'Img/north-hsies.png',
         discrip: `
 零期仙班出身，官位城隍。\n
 人手不足而讓當代官位指派只看能力不看背景，\n
@@ -43,7 +43,7 @@ app.factory('northCharatureDetail', () => {
         `,
     }, {
         name: "席良名",
-        img: 'img/north-shi.png',
+        img: 'Img/north-shi.png',
         discrip: `
 桂仙籍，民國後入仙班，台北省城隍。\n
 僅修仙三年就擔任省級城隍，\n
@@ -58,7 +58,7 @@ app.factory('northCharatureDetail', () => {
         `,
     }, {
         name: "趙凜德",
-        img: 'img/north06-du.png',
+        img: 'Img/north06-du.png',
         discrip: `
 零期仙班出身，官位城隍。\n
 出生帝王之家但母親是棄妃，善交際與談判，\n
@@ -70,7 +70,7 @@ app.factory('northCharatureDetail', () => {
         `,
     }, {
         name: "李正成",
-        img: 'img/north03-lee.png',
+        img: 'Img/north03-lee.png',
         discrip: `
 物妖，正成牌腳踏車，北災禍第三候補，生於四六事件，\n
 那天輪軸斷裂被藏於儲藏室，造成後續腳踏車共乘事件，\n
@@ -83,7 +83,7 @@ app.factory('northCharatureDetail', () => {
         `,
     }, {
         name: "陳緝示",
-        img: 'img/north16-chan.png',
+        img: 'Img/north16-chan.png',
         discrip: `
 物妖，日本警刀，北災禍第十六候補，生於基隆大屠殺，\n
 其主陳緝示為了爭取市民安全，隻身對抗了拿槍的官兵，\n
@@ -95,7 +95,7 @@ app.factory('northCharatureDetail', () => {
     },
     {
         name: "初響",
-        img: 'img/north19-cu.png',
+        img: 'Img/north19-cu.png',
         discrip: `
 物妖，二二八事件，用來掃射抗議民眾的槍，北災禍第十九候補，
 因為造成多人死亡，歸類為災禍，
@@ -103,7 +103,7 @@ app.factory('northCharatureDetail', () => {
         `,
     }, {
         name: "雅提",
-        img: 'img/north09-yati.png',
+        img: 'Img/north09-yati.png',
         discrip: `
 物妖，電腦，目前台灣最新的物妖，\n
 擔任南港、文山、內湖一帶的城隍\n
@@ -111,7 +111,7 @@ app.factory('northCharatureDetail', () => {
     },
     {
         name: "羨魚",
-        img: 'img/north17-envy.png',
+        img: 'Img/north17-envy.png',
         discrip: `
 大白鷺妖，自認守護對象是非人生物，\n
 擔任北投、士林區城隍，北災禍十七候補\n

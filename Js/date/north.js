@@ -45,7 +45,7 @@ app.factory('northCharatureDetail', () => {
         name: "席良名",
         img: 'Img/north-shi.png',
         discrip: `
-桂仙籍，民國後入仙班，台北省城隍。\n
+桂仙籍，民國後入仙班，台北省城隍。\n  
 僅修仙三年就擔任省級城隍，\n
 本要在家鄉任職，無奈省城隍廟因種種原因而被拆毀，\n
 轉而被指派往台北省城隍廟任職，\n

@@ -1,0 +1,52 @@
+.header{
+  height:auto;
+  display: block;
+  background-color:black;
+ 
+}
+.header>.innerword{
+  background-color:white;
+  width:20px
+  }
+.select{
+  position:relative;
+  background: rgba(0,0,0,1.0); 
+  text-align: center;
+  color: white;
+  font-size:32px;
+  margin:25px;
+  text-decoration-line: none;
+ 
+ 
+}
+.select>.link{
+  color: white;
+}  
+.select:hover::before{
+  opacity: 1;
+  width: 20px;
+
+}
+.select::before{
+  content: "<";
+  opacity: 0;
+  width: 0px;
+
+ display:inline-block;
+  transition: width 1s,opacity 2s linear ;
+  -webkit-transition: width 1s,opacity 2s linear ;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+body{
+
+  background-color:black;
+}
+.bodyelement{
+  margin-top: 5%;
+  position: relative;
+  display: block;
+}

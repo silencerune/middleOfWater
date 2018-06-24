@@ -1,0 +1,18 @@
+<div style="text-align: center;">
+    <div class="msgblock" ng-class="sparte?'active':''">
+
+
+    </div>
+    <!-- <div class="charapicker"> -->
+    <img class="charapicker" ng-class="sparte?'charapickeractive':''" src="{{north[referindex]['img']}}" />
+    <!-- </div> -->
+    <div class="closeBt" ng-if="sparte" ng-click="doClose()">
+        ×
+    </div>
+    <div class="charaturename" ng-if="sparte">{{north[referindex]['name']}}</div>
+    <div class="charamsg " ng-class="sparte?'charamsgactive':''">
+        <pre>{{north[referindex]['discrip']}}</pre>
+    </div>
+
+    <div class="msgbackblock" ng-class="!sparte?'closeBackBlock':''" ng-click="doClose()"></div>
+</div>

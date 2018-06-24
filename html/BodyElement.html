@@ -1,0 +1,40 @@
+<!-- <!DOCTYPE html> -->
+<!-- <div class="msgblock">
+    <div class="closeBt" ng-click="dospart">
+        ×
+    </div>
+    <div class="charapicker">
+
+    </div>
+
+</div> -->
+<div style="text-align: center;">
+
+
+    <!-- <div style="text-align: center;">
+        <div class="msgblock" ng-class="sparte?'active':''">
+
+
+        </div>
+     
+        <img class="charapicker" ng-class="sparte?'charapickeractive':''" src="{{north[referindex]['img']}}" />
+
+        <div class="closeBt" ng-if="sparte" ng-click="doClose()">
+            ×
+        </div>
+        <div class="charaturename" ng-if="sparte">{{north[referindex]['name']}}</div>
+        <div class="charamsg " ng-class="sparte?'charamsgactive':''">
+            <pre>{{north[referindex]['discrip']}}</pre>
+        </div>
+
+        <div class="msgbackblock" ng-class="!sparte?'closeBackBlock':''" ng-click="doClose()"></div>
+    </div> -->
+    <!-- <> -->
+
+    <charature-element ng-style="{'opacity':sparte?'1.0':'0.0'}"></charature-element>
+
+    <div class="picback" ng-repeat="(k,charature) in north" ng-click="dospart(k)">
+        <div class="innerlater">{{charature.name}}</div>
+        <img class="headpicinbodyelement" src="{{north[k]['img']}}" />
+    </div>
+</div>

@@ -2,12 +2,11 @@
 .msgblock{
     width:0px;
     height: 100%;
-  
     opacity: 1.0;
     position: absolute;
     z-index:100;
     transition: width 1s  linear ;
-    overflow: hidden;
+   
 }
 .active{
     width:100vw !important;

@@ -5,10 +5,17 @@
  
 }
 .linkcomic{
-  color:wheat;
+  width: auto;
+  
+  position: absolute;
+  
+  text-align: center;
+  
+  right: 0px;
+  color: wheat;
 }
 .linkcomic:link {
-  color: red;
+  color: wheat;
 }
 .header>.innerword{
   background-color:white;
@@ -63,7 +70,13 @@ body{
   }
   .select::before{
     content: "";
-   
+  }
+  .header{
+    width: 89%;
+    margin: auto;
+  }
+  .linkcomic{
+    transform: translateY(20px);
   }
 
 }

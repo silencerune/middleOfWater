@@ -26,7 +26,8 @@ app.factory('southCharatureDetail', () => {
             name: "竹青",
             img: 'Img/head/south-bamboo.png',
             discrip: `
-半仙半年，台南府城隍，台灣三大城隍之一，\n
+半仙半年，台南府城隍，\n
+台灣三大省級城隍之一，\n
 仙籍視其為恥辱，不斷地向外流放，\n
 雖為黃眸，但從未食仙啖人，\n
 仙的血統被宮廟加強，使其未曾感受過飢餓，\n

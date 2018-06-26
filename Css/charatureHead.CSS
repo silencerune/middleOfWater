@@ -114,7 +114,7 @@
     height: 200px;
     object-fit: cover;
 }
-@media screen and (max-width:600px)
+@media screen and (max-width:880px)
 {
     .charapicker{
         display: block;
@@ -146,14 +146,14 @@
         position: relative;
         margin-left: 0px;
     }
-    /* .msgblock{
-        width:300px;
-        height:750px;
-        text-align:center;
+     .msgblock{
+        position: fixed;
+        top: 0px;
+        overflow: scroll;
     }
-    .blockset>.label
+    /* .blockset>.label
     {
         position:relative;
-    } */
+    } */ 
 
 }

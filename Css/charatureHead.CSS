@@ -5,7 +5,7 @@
     opacity: 1.0;
     position: absolute;
     z-index:100;
-    transition: width 1s  linear ;
+    transition: width 0.5s  linear ;
    
 }
 .active{
@@ -18,7 +18,7 @@
     background-color:black;
     z-index:50;
     position: absolute;
-    transition: opacity 1s  linear,display 1s  linear ;
+    transition: opacity 0.5s  linear,display 0.5s  linear ;
     display:block;
 }
 .closeBackBlock{
@@ -44,7 +44,7 @@
     z-index:200;
     top:0px;
     left:0px;
-    transition:width 1s linear;
+    transition:width 0.5s linear;
    display:inline-block;
 }
 .charapickeractive{
@@ -64,7 +64,7 @@
     right:0px;
     display:inline-block;
     overflow: hidden;
-    transition: width 1s  linear;
+    transition: width 0.5s  linear;
    
 }
 .charamsgactive{
@@ -78,7 +78,7 @@
     background-color:rgb(63, 80, 85);
     display:inline-block;
 
-    transition: background-color 1s,opacity 1s linear ;
+    transition: background-color 0.5s,opacity 0.5s linear ;
 }
 .picback:hover{
     opacity:1.0;
@@ -99,7 +99,7 @@
     font-family:'標楷體';
     font-size:20px;
     color:red;
-    transition: background-color 1s,font-size 1s ,transform 1s ,color 1s linear,width 1s linear ;
+    transition: background-color 0.5s,font-size 0.5s ,transform 0.5s ,color 0.5s linear,width 0.5s linear ;
 }
 .picback:hover > .innerlater{
     width:160px;
@@ -131,7 +131,9 @@
         overflow: hidden;
         top: auto;
     }
-
+    .msgbackblock{
+        height: auto;
+    }
     .charamsgactive {
         
     width: 100vw !important;

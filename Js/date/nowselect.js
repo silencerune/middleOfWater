@@ -1,6 +1,6 @@
 app.factory('selectShareDate', (
     northCharatureDetail, southCharatureDetail, eastCharatureDetail, westCharatureDetail,
-    policeCharatureDetail
+    policeCharatureDetail, glossaryDetail
 ) => {
     let place = 'North';
     let spreatePlane = false;
@@ -11,6 +11,7 @@ app.factory('selectShareDate', (
         'East': eastCharatureDetail,
         'West': westCharatureDetail,
         'Police': policeCharatureDetail,
+        'Glossary': glossaryDetail
     }
     return {
         selectPlace: selectPlace,

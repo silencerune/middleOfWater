@@ -35,6 +35,23 @@ app.factory('southCharatureDetail', () => {
 也發生了震驚神話的府城隍事件\n
             `,
         }, {
+            name: "利普努",
+            img: 'Img/head/south-lipunu.png',
+            bodyimg: 'Img/body/south-lipunu.jpg',
+            discrip: ` 
+魯凱族人，西魯凱貴族，
+漢名趙麒紋，存在時間相當於北宋時期，\n
+因為零期仙班招募時，剛好進入漢人村莊，\n
+被判斷有仙骨，於是被強行擄走修仙，\n
+等回到部落已是百年後，\n
+一切早已物是人非。\n
+Sipita maca 繼承者，能靠視線殺死生物，\n
+但和Sipita不同的是可以自主控制，\n
+曾於諸羅縣任職城隍，\n
+目前回到部落中一同為家園繁榮努力\n
+
+            `,
+        }, {
             name: "陳 念澄",
             img: 'Img/head/south00-chang.png',
             discrip: ` 

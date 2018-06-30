@@ -14,7 +14,7 @@ app.factory('glossaryDetail', () => {
     }, {
         name: "神約災契",
         img: 'Img/head/glossary01.jpg',
-        bodyimg: 'https://truth.bahamut.com.tw/s01/201603/daa9adef7c4c43f5e81fa2764b569cc8.PNG',
+        // bodyimg: 'https://truth.bahamut.com.tw/s01/201603/daa9adef7c4c43f5e81fa2764b569cc8.PNG',
         discrip: `
 同一神話分成兩個勢力，\n
 神那方持有神約，災禍方持有災契\n

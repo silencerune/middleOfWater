@@ -27,7 +27,7 @@
   text-align: center;
   color: white;
   font-size:32px;
-  /* margin:25px; */
+  margin:25px;
   text-decoration-line: none;
  
  
@@ -65,6 +65,9 @@ body{
 }
 @media screen and (max-width:880px)
 {
+  .select{
+    margin:0px;
+  }
   .select:hover::before{
     width: 0px;
   }

@@ -31,8 +31,6 @@
 
 		<div style="background-color:#000000;color:#ffff00;">get sign</div>
 
-
-
 	</div>
 
 	<script>
@@ -312,7 +310,7 @@
 		function setballcolor() {
 			var ballColor = Math.random() * 10;
 
-			if (ballColor == 9) {
+			if (ballColor >= 9) {
 				ball.material = new THREE.MeshBasicMaterial({ color: 0xffff00 });
 				endtexture = sign[0];
 			}

@@ -2,7 +2,7 @@ app.factory('selectShareDate', (
     northCharatureDetail, southCharatureDetail, eastCharatureDetail, westCharatureDetail,
     policeCharatureDetail, glossaryDetail, storyDetail
 ) => {
-    let place = localStorage.getItem("selectplace") ? localStorage.getItem("selectplace") : 'North';
+    let place = localStorage.getItem("selectplace") ? localStorage.getItem("selectplace") : 'Story';
     let spreatePlane = false;
     let refference = 0;
     const placechar = {

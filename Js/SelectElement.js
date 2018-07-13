@@ -20,6 +20,7 @@ app.controller("selectElementController", ($rootScope, $scope, selectShareDate) 
 
     $scope.slectplace = (place) => {
         $scope.nowSelect = "Middle";
+        // console.log(place);
         selectShareDate.selectPlace(place);
         $scope.$broadcast('changeElement');
     }

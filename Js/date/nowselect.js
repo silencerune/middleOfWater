@@ -1,8 +1,8 @@
 app.factory('selectShareDate', (
     northCharatureDetail, southCharatureDetail, eastCharatureDetail, westCharatureDetail,
-    policeCharatureDetail, glossaryDetail
+    policeCharatureDetail, glossaryDetail, storyDetail
 ) => {
-    let place = 'North';
+    let place = localStorage.getItem("selectplace") ? localStorage.getItem("selectplace") : 'North';
     let spreatePlane = false;
     let refference = 0;
     const placechar = {
@@ -11,7 +11,8 @@ app.factory('selectShareDate', (
         'East': eastCharatureDetail,
         'West': westCharatureDetail,
         'Police': policeCharatureDetail,
-        'Glossary': glossaryDetail
+        'Glossary': glossaryDetail,
+        'Story': storyDetail
     }
     return {
         selectPlace: selectPlace,
@@ -28,7 +29,8 @@ app.factory('selectShareDate', (
     }
     function selectPlace(from) {
         place = from;
-        console.info(place);
+        localStorage.setItem("selectplace", place);
+        // console.info(place);
     }
     function getPlance() {
 

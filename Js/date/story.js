@@ -16,7 +16,7 @@ app.factory('storyDetail', () => {
         },
         {
             name: "水中央",
-            img: 'Img/Story/middle.jpg',
+            img: 'Img/Story/middle.JPG',
             link: `https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=343422`,
             discrip: `
 故事時間地點   1988年蘭嶼\n
@@ -43,7 +43,7 @@ app.factory('storyDetail', () => {
             `,
         }, {
             name: "狐與虎",
-            img: 'Img/Story/tigerandfox.jpg',
+            img: 'Img/Story/tigerandfox.JPG',
             link: `https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=384153`,
             discrip: `
 二郎神與狐仙的放閃生活\n
@@ -57,7 +57,7 @@ app.factory('storyDetail', () => {
             `,
         }, {
             name: "雙婚契(BL注意)",
-            img: 'Img/Story/wedding.jpg',
+            img: 'Img/Story/wedding.JPG',
             link: `https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=383661`,
             discrip: `
 死生契闊，與子成說，\n
@@ -73,7 +73,7 @@ app.factory('storyDetail', () => {
             `,
         }, {
             name: "短篇集",
-            img: 'Img/Story/short.jpg',
+            img: 'Img/Story/short.JPG',
             link: `https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=383445`,
             discrip: `
 先知的歡樂日常\n

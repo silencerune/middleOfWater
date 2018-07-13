@@ -80,7 +80,7 @@ app.factory('storyDetail', () => {
             `,
         }, {
             name: "屏幕那端",
-            img: 'Img/Story/overScreen.jpg',
+            img: 'Img/Story/overScreen.JPG',
             link: `https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=294136`,
             discrip: `
 名為許 千菱的工程師之日常\n

@@ -1,5 +1,5 @@
 app.factory('southCharatureDetail', () => {
-    var south = [
+    var Chiayi = [
         {
             name: "朱 一貴",
             img: 'Img/head/south00-master.png',
@@ -22,10 +22,19 @@ app.factory('southCharatureDetail', () => {
 在誓鳴的贊助下，擁有個人戲班，自己則為旦的主擔。\n
 
             `,
-        }, {
-            name: "竹青",
-            img: 'Img/head/south-bamboo.png',
-            discrip: `
+        },
+    ];
+    var ChiayiCity = [{
+        name: "陳 念澄",
+        img: 'Img/head/south00-chang.png',
+        discrip: ` 
+物妖，町中的嘉義，生於嘉義民兵事件。\n
+        `,
+    },]
+    var Tainan = [{
+        name: "竹青",
+        img: 'Img/head/south-bamboo.png',
+        discrip: `
 半仙半年，台南府城隍，\n
 台灣三大省級城隍之一，\n
 仙籍視其為恥辱，不斷地向外流放，\n
@@ -33,12 +42,13 @@ app.factory('southCharatureDetail', () => {
 仙的血統被宮廟加強，使其未曾感受過飢餓，\n
 然而平衡在被趕出府城隍廟後，一次爆發，\n
 也發生了震驚神話的府城隍事件\n
-            `,
-        }, {
-            name: "利普努",
-            img: 'Img/head/south-lipunu.png',
-            bodyimg: 'Img/body/south-lipunu.jpg',
-            discrip: ` 
+        `,
+    },];
+    var Pingtung = [{
+        name: "利普努",
+        img: 'Img/head/south-lipunu.png',
+        bodyimg: 'Img/body/south-lipunu.jpg',
+        discrip: ` 
 魯凱族人，西魯凱貴族，
 漢名趙麒紋，存在時間相當於北宋時期，\n
 因為零期仙班招募時，剛好進入漢人村莊，\n
@@ -50,19 +60,12 @@ Sipita maca 繼承者，能靠視線殺死生物，\n
 曾於諸羅縣任職城隍，\n
 目前回到部落中一同為家園繁榮努力\n
 
-            `,
-        }, {
-            name: "陳 念澄",
-            img: 'Img/head/south00-chang.png',
-            discrip: ` 
-物妖，町中的嘉義，生於嘉義民兵事件。\n
-            `,
-        },
-
-
-
-
-
-    ];
-    return south;
+        `,
+    },]
+    return {
+        Chiayi: Chiayi,
+        ChiayiCity: ChiayiCity,
+        Tainan: Tainan,
+        Pingtung: Pingtung,
+    };
 });

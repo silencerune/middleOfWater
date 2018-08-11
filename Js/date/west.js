@@ -1,5 +1,5 @@
 app.factory('westCharatureDetail', () => {
-    var west = [
+    var Nantou = [
         {
             name: "薩摩亞",
             img: 'Img/head/west-master.png',
@@ -13,5 +13,7 @@ app.factory('westCharatureDetail', () => {
             `,
         }
     ];
-    return west;
+    return {
+        Nantou: Nantou,
+    };
 });

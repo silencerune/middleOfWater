@@ -1,5 +1,5 @@
 app.factory('eastCharatureDetail', () => {
-    var east = [
+    var Taitung = [
         {
             name: "希．瑪拉歐斯",
             img: 'Img/head/east-master.png',
@@ -35,7 +35,7 @@ app.factory('eastCharatureDetail', () => {
 
 
     ];
-    return east;
+    return { Taitung: Taitung };
 });
 // {
 //     name: "",

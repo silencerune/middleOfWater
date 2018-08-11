@@ -66,19 +66,6 @@ app.factory('northCharatureDetail', () => {
         
         `,
     }, {
-        name: "趙 凜德",
-        img: 'Img/head/north06-du.png',
-        bodyimg: 'Img/body/north06-du.jpg',
-        discrip: `
-零期仙班出身，官位城隍。\n
-出生帝王之家但母親是棄妃，善交際與談判，\n
-曾欺騙鴉青讓他保護自己，\n
-曾在府城隍被換下時，保住了自己和臺灣仙的官位，\n
-現於新竹都城隍廟任職，\n
-台灣三大省級城隍之一，北災禍主第六候補。\n
-        
-        `,
-    }, {
         name: "李 正成",
         img: 'Img/head/north03-lee.png',
         discrip: `
@@ -90,18 +77,6 @@ app.factory('northCharatureDetail', () => {
 而且唐山出身的台大校長保護學生，台灣出身的師大校長則放任軍官抓人，\n
 和其他白色年代物妖相比，省籍情結沒有那麼重，\n
 現於T大醫院擔任醫師。
-        `,
-    }, {
-        name: "陳 緝示",
-        img: 'Img/head/north16-chan.png',
-        bodyimg: 'Img/body/north16-chan.jpg',
-        discrip: `
-物妖，日本警刀，北災禍第十六候補，生於基隆大屠殺，\n
-其主陳緝示為了爭取市民安全，隻身對抗了拿槍的官兵，\n
-魂魄堅毅引起警刀的共鳴，\n
-除了核心外，也繼承了當代罹難者的記憶，\n
-因被用來攻擊當代政權，不問緣由就歸類為災禍，\n
-現於基隆港警察總隊以及神話警察部隊擔任刑警\n
         `,
     },
     {
@@ -128,7 +103,40 @@ app.factory('northCharatureDetail', () => {
 大白鷺妖，北災禍十七候補，自認守護對象是非人生物，\n
 擔任北投、士林區城隍。\n
 `,
+    },];
+    var Keelung = [{
+        name: "陳 緝示",
+        img: 'Img/head/north16-chan.png',
+        bodyimg: 'Img/body/north16-chan.jpg',
+        discrip: `
+物妖，日本警刀，北災禍第十六候補，生於基隆大屠殺，\n
+其主陳緝示為了爭取市民安全，隻身對抗了拿槍的官兵，\n
+魂魄堅毅引起警刀的共鳴，\n
+除了核心外，也繼承了當代罹難者的記憶，\n
+因被用來攻擊當代政權，不問緣由就歸類為災禍，\n
+現於基隆港警察總隊以及神話警察部隊擔任刑警\n
+        `,
+    },];
+    var Hsinchu = [{
+        name: "趙 凜德",
+        img: 'Img/head/north06-du.png',
+        bodyimg: 'Img/body/north06-du.jpg',
+        discrip: `
+零期仙班出身，官位城隍。\n
+出生帝王之家但母親是棄妃，善交際與談判，\n
+曾欺騙鴉青讓他保護自己，\n
+曾在府城隍被換下時，保住了自己和臺灣仙的官位，\n
+現於新竹都城隍廟任職，\n
+台灣三大省級城隍之一，北災禍主第六候補。\n
+        
+        `,
     },]
-    return north;
+
+
+    return {
+        north: north,
+        Keelung: Keelung,
+        Hsinchu: Hsinchu
+    };
 }
 )

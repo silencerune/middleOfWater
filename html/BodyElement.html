@@ -1,40 +1,36 @@
-<!-- <!DOCTYPE html> -->
-<!-- <div class="msgblock">
-    <div class="closeBt" ng-click="dospart">
-        ×
-    </div>
-    <div class="charapicker">
-
-    </div>
-
-</div> -->
-<div style="text-align: center;">
+<div class="picback" ng-repeat="(k,charature) in north" data-toggle="modal" data-target="#exampleModal" ng-click="dospart(k)">
+    <pre class="innerlater">{{charature.name}}</pre>
+    <img class="headpicinbodyelement" src="{{north[k]['img']}}" />
+</div>
 
 
-    <!-- <div style="text-align: center;">
-        <div class="msgblock" ng-class="sparte?'active':''">
+<div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document" style="max-width:90%; ">
+        <div class="modal-content  bg-dark" style="color:wheat ;height:">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{north[referindex]['name']}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body fixbody">
+                <div class="row">
+                    <div>
+                        <img ng-if="north[referindex]['bodyimg']" class="charapicker" ng-class="sparte?'charapickeractive':''" src="{{north[referindex]['bodyimg']}}"
+                        />
+                        <img ng-if="!north[referindex]['bodyimg']" class="charapicker" ng-class="sparte?'charapickeractive':''" src="{{north[referindex]['img']}}"
+                        />
+                    </div>
+                    <div class="textfix">
+                        <pre style="color:wheat;font-size: larger; ">{{north[referindex]['discrip']}}</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-primary " ng-if="north[referindex]['link']" href="{{north[referindex]['link']}}">read comic-></a>
 
-
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
         </div>
-     
-        <img class="charapicker" ng-class="sparte?'charapickeractive':''" src="{{north[referindex]['img']}}" />
-
-        <div class="closeBt" ng-if="sparte" ng-click="doClose()">
-            ×
-        </div>
-        <div class="charaturename" ng-if="sparte">{{north[referindex]['name']}}</div>
-        <div class="charamsg " ng-class="sparte?'charamsgactive':''">
-            <pre>{{north[referindex]['discrip']}}</pre>
-        </div>
-
-        <div class="msgbackblock" ng-class="!sparte?'closeBackBlock':''" ng-click="doClose()"></div>
-    </div> -->
-    <!-- <> -->
-
-    <charature-element ng-style="{'opacity':sparte?'1.0':'0.0'}"></charature-element>
-
-    <div class="picback" ng-repeat="(k,charature) in north" ng-click="dospart(k)">
-        <div class="innerlater">{{charature.name}}</div>
-        <img class="headpicinbodyelement" src="{{north[k]['img']}}" />
     </div>
 </div>

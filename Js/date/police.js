@@ -17,7 +17,7 @@ app.factory('policeCharatureDetail', () => {
 曾讓緝示懷疑人事想殺死他。
             `,
         }, {
-            name: `愛得萊德 阿切爾`,
+            name: `愛得萊德\n‧阿切爾`,
             img: 'Img/head/polic03-adlaida.png',
             bodyimg: 'Img/body/polic03-adlaida.jpg',
             discrip: `

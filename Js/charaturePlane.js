@@ -37,7 +37,4 @@ app.controller("charaturePlaneController", ($scope, selectShareDate) => {
     }
 
 
-
-    // $scope.sparte = selectShareDate.getOnoff()
-
 });

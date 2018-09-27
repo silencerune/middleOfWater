@@ -46,9 +46,13 @@
     left:0px;
     transition:width 0.5s linear;
    display:inline-block;
+   position:inherit;
+
 }
 .charapickeractive{
     width:30vw;
+    margin-right: 60px;
+    
 
 }
 .charamsg{
@@ -71,14 +75,14 @@
     width:60vw !important;
 }
 .picback{
-    width:200px;
-    height:200px;
-    margin:1%;
-    opacity:0.5;
-    background-color:rgb(63, 80, 85);
-    display:inline-block;
-
-    transition: background-color 0.5s,opacity 0.5s linear ;
+    width: 200px;
+    height: 200px;
+    margin: 50PX;
+    opacity: 0.5;
+    background-color: rgb(63, 80, 85);
+    display: inline-block;
+    transition: background-color 0.5s,opacity 0.5s linear;
+    border-radius: 25px;
 }
 .picback:hover{
     opacity:1.0;
@@ -94,12 +98,18 @@
     z-index: 250;
 }
 .picback>.innerlater{
-    width:100px;
-    height:50px;
-    font-family:'標楷體';
-    font-size:20px;
-    color:red;
-    transition: background-color 0.5s,font-size 0.5s ,transform 0.5s ,color 0.5s linear,width 0.5s linear ;
+    width: 100px;
+    height: 50px;
+    font-family: '標楷體';
+    font-size: 20px;
+    color: red;
+    transition: background-color 0.5s,font-size 0.5s ,transform 0.5s ,color 0.5s linear,width 0.5s linear;
+    border-radius: 15px;
+    margin: auto;
+    text-align: center;
+    overflow: visible;
+    
+    margin-bottom: 10px;
 }
 .picback:hover > .innerlater{
     width:160px;
@@ -107,6 +117,7 @@
     font-size:30px;
     background-color:white;
     color:blue;
+    height: auto;
     
 }
 .headpicinbodyelement{
@@ -119,11 +130,16 @@
     .charapicker{
         display: block;
         position: relative;
+        position: inherit;
+        width: 100%;
     }
     .charapickeractive {
         width: 100vw;
         display: block;
-        position: relative;
+        /* position: relative; */
+        position: inherit;
+        width: 100%;
+        margin-right:0px;
     }
     .charamsg{
         position: relative;
@@ -151,6 +167,9 @@
      .msgblock{
         position: fixed;
         top: 0px;
+        overflow: scroll;
+    }
+    .textfix{
         overflow: scroll;
     }
     /* .blockset>.label

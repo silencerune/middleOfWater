@@ -32,6 +32,10 @@
  
  
 }
+.fixbody{
+  margin-left: auto;
+  margin-right: auto;
+}
 .select>.link{
   color: white;
 }  
@@ -63,10 +67,26 @@ body{
   position: relative;
   display: block;
 }
+.pcdisplay{
+
+}
+.mbdisplay{
+  display:none ;
+}
 @media screen and (max-width:880px)
 {
   .select{
     margin:0px;
+  }
+  .mbdisplay{
+    display:initial;
+  }
+  .pcdisplay{
+    display:none!important;
+  }
+  .fixbody{
+    margin-left:initial;
+    margin-right:initial;
   }
   .select:hover::before{
     width: 0px;

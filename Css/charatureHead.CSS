@@ -75,8 +75,9 @@
     width:60vw !important;
 }
 .picback{
-    width: 200px;
-    height: 200px;
+    width: 234px;
+    height: 300px;
+    text-align: center;
     margin: 50PX;
     opacity: 0.5;
     background-color: rgb(63, 80, 85);

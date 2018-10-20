@@ -75,19 +75,23 @@
     width:60vw !important;
 }
 .picback{
-    width: 234px;
+    width: 300px;
     height: 300px;
     text-align: center;
     margin: 50PX;
     opacity: 0.5;
     background-color: rgb(63, 80, 85);
     display: inline-block;
-    transition: background-color 0.5s,opacity 0.5s linear;
-    border-radius: 25px;
+    transition: background-color 0.5s,opacity 0.5s linear, border-radius 0.5s,border-color 0.5s;
+    border-radius:62px;
+    transform: rotateZ(43deg);
 }
 .picback:hover{
-    opacity:1.0;
-    background-color:lightblue;
+    opacity: 1.0;
+    background-color: initial;
+    border-bottom: solid 9px;
+    border-radius: 160px;
+    border-color: maroon;
     
 }
 .charaturename{
@@ -125,6 +129,10 @@
     width: 200px;
     height: 200px;
     object-fit: cover;
+    border-radius: 100px;
+    margin-top: inherit;
+    
+    transform: rotate(-43deg);
 }
 @media screen and (max-width:880px)
 {

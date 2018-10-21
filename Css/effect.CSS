@@ -5,9 +5,10 @@
     position: absolute; 
    
     color: white;
-    transform: rotate(-43deg);
-    margin-top: 282px;
-    margin-left: 73px;
+    font-size:xx-large;
+    /* transform: rotate(-43deg); */
+    /* margin-top: 282px;
+    margin-left: 73px; */
     transition:   border-radius 0.5s,font-size 0.5s , border-bottom 0.5s ,color 0.5s linear,width 0.5s linear;
     
 }

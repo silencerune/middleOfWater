@@ -39,7 +39,7 @@ app.factory('southCharatureDetail', () => {
             img: 'Img/head/south-lipunu.png',
             bodyimg: 'Img/body/south-lipunu.jpg',
             discrip: ` 
-魯凱族人，西魯凱貴族，
+魯凱族人，西魯凱貴族，\n
 漢名趙麒紋，存在時間相當於北宋時期，\n
 因為零期仙班招募時，剛好進入漢人村莊，\n
 被判斷有仙骨，於是被強行擄走修仙，\n

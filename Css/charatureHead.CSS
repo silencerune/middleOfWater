@@ -179,7 +179,8 @@
         overflow: scroll;
     }
     .textfix{
-        overflow: scroll;
+        /* overflow: scroll; */
+        width: 100%;
     }
     /* .blockset>.label
     {

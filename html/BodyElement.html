@@ -7,19 +7,22 @@
 
 <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document" style="max-width:90%; ">
-        <div class="modal-content  bg-dark" style="color:wheat ;">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">{{north[referindex]['name']}}</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal-content  bg-dark" style="color:wheat ; background: black;border-radius:  100% 50px;">
+            <div>
+                <h5 class="modal-title nameblock" id="exampleModalLabel">
+                    <strong>{{north[referindex]['name']}}
+                    </strong>
+                </h5>
+                <button type="button" class="close closebotton" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body fixbody">
                 <div class="row">
                     <div>
-                        <img ng-if="north[referindex]['bodyimg']" class="charapicker" ng-class="sparte?'charapickeractive':''" src="{{north[referindex]['bodyimg']}}"
+                        <img ng-if="north[referindex]['bodyimg']" class="charapicker picblock" ng-class="sparte?'charapickeractive':''" src="{{north[referindex]['bodyimg']}}"
                         />
-                        <img ng-if="!north[referindex]['bodyimg']" class="charapicker" ng-class="sparte?'charapickeractive':''" src="{{north[referindex]['img']}}"
+                        <img ng-if="!north[referindex]['bodyimg']" class="charapicker picblock" ng-class="sparte?'charapickeractive':''" src="{{north[referindex]['img']}}"
                         />
                     </div>
                     <div class="textfix">
@@ -27,10 +30,15 @@
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <a class="btn btn-primary " ng-if="north[referindex]['link']" href="{{north[referindex]['link']}}">read comic-></a>
+            <div class="modal-footer" style=" border: none;">
+                <a class="btn btn-primary footerbutton" ng-if="north[referindex]['link']" href="{{north[referindex]['link']}}" style="padding-top: 50px;transform: translateX(-89px);">
+                    <span>
+                        read comic->
+                    </span>
 
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </a>
+
+                <button type="button" class="btn btn-secondary footerbutton" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>

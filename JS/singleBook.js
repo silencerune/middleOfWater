@@ -15,11 +15,9 @@ let templatecode = `
 
             <div class="plane front" >  <div class="frontmask"></div>
                 <div class="titleimage" v-bind:style="frontcoverColor"></div>
-                <div class="booktitleonfront">
+              
+                <div class="booktitleonfront" style="color: goldenrod;">
                 <b>`+ '${coverName}' + `</b>
-                </div> 
-                <div class="booktitleonfront" style="transform:translateY(-78px);color: goldenrod;">
-                `+ '${coverName}' + `
                 </div>
               
             </div>

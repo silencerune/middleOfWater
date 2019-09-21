@@ -1,0 +1,140 @@
+<html lang="zh-CN">
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <meta charset="UTF-8">
+    <title>JavaScript Study</title>
+
+    <link rel="stylesheet" href="css/bookStyle.css">
+    <link rel="stylesheet" href="css/storyset.css">
+    <script src="JS/singleBook.js"></script>
+    <script src="JS/charterElement.js"></script>
+
+    <script src="JS/data/chartdata.js"></script>
+    <script src="JS/data/bookdata.js"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+
+<body class="bodyset">
+
+
+
+    <div id="app">
+
+
+
+
+        <el-drawer size="50%" style="overflow:scroll" :title="storyTargtDec.coverName" :visible.sync="drawerStory" :direction="direction"
+            :before-close="handleClose">
+            <div class="story_draw">
+                <pre>{{storyTargtDec.storyintroduction}}</pre>
+            </div>
+            <div class="story_draw_img" v-bind:style="storyimg">
+
+            </div>
+        </el-drawer>
+
+
+
+
+
+        <el-dialog title="提示" :visible.sync="dialogVisible" width="90%" :before-close="handleClose">
+
+            <el-tabs @tab-click="handleClick">
+                <el-tab-pane :label="targetset.labelName" v-for="(targetset,key1) in charaterList" style="text-align: center;">
+
+
+                    <div v-for="(charatelement, key2) in targetset.chaterdetail" class="charaitem">
+                        <charter-element :charater-element="charatelement"></charter-element>
+                    </div>
+
+                </el-tab-pane>
+            </el-tabs>
+
+            <span slot="footer" class="dialog-footer">
+                <el-button @click="dialogVisible = false">取 消</el-button>
+                <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
+            </span>
+        </el-dialog>
+
+
+
+
+        <el-tabs @tab-click="handleClick">
+            <el-tab-pane :label="targetset.labelName" v-for="(targetset,key1) in storySerise">
+
+                <div class="bookshore">
+                    <single-book v-for="(bookItem,key2) in targetset.storysDetail" :background-image="bookItem.backgroundImage" :cover-name-Orign="bookItem.coverName"
+                        :story-introduction="bookItem.storyintroduction" :book-key="bookItem.keyfram" :link-url="bookItem.linkurl"
+                        v-on:click-story="storyPaper" v-on:click-char="charater"></single-book>
+                </div>
+
+            </el-tab-pane>
+        </el-tabs>
+    </div>
+
+    <script>
+
+
+
+        var app = new Vue({
+            el: '#app',
+
+            data: {
+                dialogVisible: false,
+                middlewater: bookData_middleWater,
+                crossTheWindow: bookData_crossTheWindow,
+                short: bookData_short,
+                storySerise: allSerise,
+                storyTarget: [0, 0],
+                charaterList: [],
+                drawerStory: false,
+                direction: 'ttb',
+                storyimg: {
+                    'background-image': ``
+                },
+                storyTargtDec: ''
+            },
+            methods: {
+                storyPaper(covername) {
+                    this.storyTarget = covername.split('-');
+                    // this.storyTitle = this.storySerise[this.storyTarget[0] - 1].storysDetail[this.storyTarget[1] - 1].coverName;
+                    // this.storyTargtDec = this.storySerise[this.storyTarget[0] - 1].storysDetail[this.storyTarget[1] - 1].storyintroduction;
+                    this.storyTargtDec = this.storySerise[this.storyTarget[0] - 1].storysDetail[this.storyTarget[1] - 1];
+                    this.storyimg = {
+                        'background-image': `url(${this.storyTargtDec.backgroundImage})`
+                    };
+                    this.drawerStory = true;
+                    // alert(covername + 'paper')
+                },
+
+                charater(covername) {
+
+                    this.storyTarget = covername.split('-');
+                    if (this.storySerise[this.storyTarget[0] - 1].chaterSame == true) {
+                        this.charaterList = this.storySerise[this.storyTarget[0] - 1].chaterAll
+                    }
+                    else {
+                        this.charaterList = this.storySerise[this.storyTarget[0] - 1].storysDetail[this.storyTarget[1] - 1].charterList
+
+                    }
+                    this.dialogVisible = true;
+                },
+                handleClose(done) {
+                    done();
+                },
+                handleClick(tab, event) {
+
+                }
+
+
+            }
+        })
+
+    </script>
+</body>
+
+</html>

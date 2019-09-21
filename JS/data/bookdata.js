@@ -100,7 +100,7 @@ let bookData_short = [
         這，是一生的終點，\n
         卻也是一生的起點\n
         `,
-        charterList: { chaterdetail: sort_wantranswai }
+        charterList: [sort_wantranswai]
 
     },
     {
@@ -109,7 +109,7 @@ let bookData_short = [
         coverName: "先知日常",
         keyfram: '3-2',
         storyintroduction: `先知日常`,
-        charterList: { chaterdetail: sort_xeniji }
+        charterList: [sort_xeniji]
     },
     {
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/01/0003683401.JPG",
@@ -117,7 +117,7 @@ let bookData_short = [
         coverName: "姊夫妹婿",
         keyfram: '3-3',
         storyintroduction: `差了20歲的姊夫與妹婿的歡樂日常`,
-        charterList: { chaterdetail: sort_hasbend }
+        charterList: [sort_hasbend]
     },
     {
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/95/0003590095.JPG",
@@ -130,7 +130,7 @@ let bookData_short = [
         一場交易，兩段婚姻，演員與CEO成為合法夫妻，\n
         費盡心機，機關算盡，一切只為完成那最純粹的心願\n
         ─生與你共度，死與你共葬，我想和你在一起，至死不渝\n`,
-        charterList: { chaterdetail: sort_doubleWeddy }
+        charterList: [sort_doubleWeddy]
     },
 
 ];

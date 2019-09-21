@@ -41,11 +41,10 @@
 
 
 
-        <el-dialog title="提示" :visible.sync="dialogVisible" width="90%" :before-close="handleClose">
+        <el-dialog :title="storyTargtDec.coverName" :visible.sync="dialogVisible" width="90%" :before-close="handleClose">
 
-            <el-tabs @tab-click="handleClick">
-                <el-tab-pane :label="targetset.labelName" v-for="(targetset,key1) in charaterList" style="text-align: center;">
-
+            <el-tabs @tab-click="handleClick" v-model="activeName">
+                <el-tab-pane :name="key1" :label="targetset.labelName" v-for="(targetset,key1) in charaterList" style="text-align: center;">
 
                     <div v-for="(charatelement, key2) in targetset.chaterdetail" class="charaitem">
                         <charter-element :charater-element="charatelement"></charter-element>
@@ -96,7 +95,8 @@
                 storyimg: {
                     'background-image': ``
                 },
-                storyTargtDec: ''
+                storyTargtDec: '',
+                activeName: 0
             },
             methods: {
                 storyPaper(covername) {
@@ -115,11 +115,12 @@
 
                     this.storyTarget = covername.split('-');
                     if (this.storySerise[this.storyTarget[0] - 1].chaterSame == true) {
+                        this.activeName = "0";
                         this.charaterList = this.storySerise[this.storyTarget[0] - 1].chaterAll
                     }
                     else {
+                        this.activeName = "0";
                         this.charaterList = this.storySerise[this.storyTarget[0] - 1].storysDetail[this.storyTarget[1] - 1].charterList
-
                     }
                     this.dialogVisible = true;
                 },

@@ -24,15 +24,21 @@
 
     <div id="app">
 
+        <!-- <div class="page_background" v-bind:style="eventset ">{{activeNameTab}}</div> -->
 
 
+        <div class="page_background">
+            <transition name="el-fade-in-linear">
+                <div v-show="show" class="transition-box">{{activeNameTab}}</div>
+            </transition>
+        </div>
 
-        <el-drawer size="50%" style="overflow:scroll" :title="storyTargtDec.coverName" :visible.sync="drawerStory" :direction="direction"
-            :before-close="handleClose">
-            <div class="story_draw">
+        <el-drawer size="50% " style="overflow:scroll " :title="storyTargtDec.coverName " :visible.sync="drawerStory
+            " :direction="direction " :before-close="handleClose ">
+            <div class="story_draw ">
                 <pre>{{storyTargtDec.storyintroduction}}</pre>
             </div>
-            <div class="story_draw_img" v-bind:style="storyimg">
+            <div class="story_draw_img " v-bind:style="storyimg ">
 
             </div>
         </el-drawer>
@@ -41,38 +47,44 @@
 
 
 
-        <el-dialog :title="storyTargtDec.coverName" :visible.sync="dialogVisible" width="90%" :before-close="handleClose">
+        <el-dialog :title="storyTargtDec.coverName " :visible.sync="dialogVisible " width="90% " :before-close="handleClose ">
 
-            <el-tabs @tab-click="handleClick" v-model="activeName">
-                <el-tab-pane :name="key1" :label="targetset.labelName" v-for="(targetset,key1) in charaterList" style="text-align: center;">
+            <el-tabs @tab-click="handleClick " v-model="activeName ">
+                <el-tab-pane :name="key1 " :label="targetset.labelName " v-for="(targetset,key1) in charaterList
+            " style="text-align: center; ">
 
-                    <div v-for="(charatelement, key2) in targetset.chaterdetail" class="charaitem">
-                        <charter-element :charater-element="charatelement"></charter-element>
+                    <div v-for="(charatelement, key2) in targetset.chaterdetail " class="charaitem ">
+                        <charter-element :charater-element="charatelement "></charter-element>
                     </div>
 
                 </el-tab-pane>
             </el-tabs>
 
-            <span slot="footer" class="dialog-footer">
-                <el-button @click="dialogVisible = false">取 消</el-button>
-                <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
+            <span slot="footer " class="dialog-footer ">
+                <el-button @click="dialogVisible=false ">取 消</el-button>
+                <el-button type="primary " @click="dialogVisible=false ">确 定</el-button>
             </span>
         </el-dialog>
 
 
 
 
-        <el-tabs @tab-click="handleClick">
-            <el-tab-pane :label="targetset.labelName" v-for="(targetset,key1) in storySerise">
+        <el-tabs @tab-click="handleClick ">
+            <el-tab-pane :label="targetset.labelName " v-for="(targetset,key1) in storySerise ">
 
-                <div class="bookshore">
-                    <single-book v-for="(bookItem,key2) in targetset.storysDetail" :background-image="bookItem.backgroundImage" :cover-name-Orign="bookItem.coverName"
-                        :story-introduction="bookItem.storyintroduction" :book-key="bookItem.keyfram" :link-url="bookItem.linkurl"
-                        v-on:click-story="storyPaper" v-on:click-char="charater"></single-book>
-                </div>
+                <transition name="el-fade-in-linear">
+
+                    <div class="bookshore" v-show="show">
+                        <single-book v-for="(bookItem,key2) in targetset.storysDetail " :background-image="bookItem.backgroundImage
+            " :cover-name-Orign="bookItem.coverName " :story-introduction="bookItem.storyintroduction " :book-key="bookItem.keyfram "
+                            :link-url="bookItem.linkurl " v-on:click-story="storyPaper " v-on:click-char="charater "></single-book>
+                    </div>
+                </transition>
 
             </el-tab-pane>
         </el-tabs>
+
+
     </div>
 
     <script>
@@ -91,7 +103,12 @@
                 storyTarget: [0, 0],
                 charaterList: [],
                 drawerStory: false,
+                activeNameTab: '水中央',
+                eventset: {
+                    'opacity': 1
+                },
                 direction: 'ttb',
+                show: true,
                 storyimg: {
                     'background-image': ``
                 },
@@ -115,11 +132,11 @@
 
                     this.storyTarget = covername.split('-');
                     if (this.storySerise[this.storyTarget[0] - 1].chaterSame == true) {
-                        this.activeName = "0";
+                        this.activeName = "0 ";
                         this.charaterList = this.storySerise[this.storyTarget[0] - 1].chaterAll
                     }
                     else {
-                        this.activeName = "0";
+                        this.activeName = "0 ";
                         this.charaterList = this.storySerise[this.storyTarget[0] - 1].storysDetail[this.storyTarget[1] - 1].charterList
                     }
                     this.dialogVisible = true;
@@ -128,7 +145,26 @@
                     done();
                 },
                 handleClick(tab, event) {
+                    if (tab.label != this.activeNameTab) {
+                        this.show = false
 
+
+                        let vm = this;
+
+                        new Promise((resolve, reject) => {
+                            vm.show = false
+
+                            resolve();
+                        }).then(() => {
+                            setTimeout(() => { vm.activeNameTab = tab.label; }, 500);
+                        })
+                            .then(() => {
+                                // 
+                                setTimeout(() => { vm.show = true; }, 500);
+                            })
+
+
+                    }
                 }
 
 

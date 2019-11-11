@@ -49,7 +49,7 @@
 
         <el-dialog :title="storyTargtDec.coverName " :visible.sync="dialogVisible " width="90% " :before-close="handleClose ">
 
-            <el-tabs @tab-click="handleClick " v-model="activeName ">
+            <el-tabs @tab-click="handleClick2 " v-model="activeName ">
                 <el-tab-pane :name="key1 " :label="targetset.labelName " v-for="(targetset,key1) in charaterList
             " style="text-align: center; ">
 
@@ -144,6 +144,7 @@
                 handleClose(done) {
                     done();
                 },
+                handleClick2(tab, event) { },
                 handleClick(tab, event) {
                     if (tab.label != this.activeNameTab) {
 

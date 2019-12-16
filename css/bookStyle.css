@@ -335,5 +335,7 @@
         TRANSFORM: rotatez(45deg);
     }
       
-      
+    .v-modal {
+        z-index: 0 !important;
+    }
       

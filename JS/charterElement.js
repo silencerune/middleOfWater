@@ -9,11 +9,12 @@ let templaterCodeCharter = `
 :title=" charaterListElement.name"
 :visible.sync="drawer"
 :direction="direction"
-size="50%"
+size="100%"
+style="font-size:54px;text-align:left;"
 :before-close="handleClose" over>
-<div class="charaitem"  style="width:200px;height:200px;" v-bind:style="frontcoverColor"></div>
+<div class="charaitem"  style="width:500px;height:500px;font-size:54px;" v-bind:style="frontcoverColor"></div>
 <pre>
-`+ '${charaterListElement.discrip}' + `
+` + '${charaterListElement.discrip}' + `
 </pre>
 </el-drawer>
 
@@ -23,7 +24,7 @@ size="50%"
         <div>
             <div class="charaterElement" >
                 <div class="leftcover">
-                    <pre class="middlecover">`+ '${ charaterListElement.name}' + `</pre>
+                    <pre class="middlecover">` + '${ charaterListElement.name}' + `</pre>
                 </div>
                 <div class="rightcover"></div>
 
@@ -65,7 +66,9 @@ Vue.component('charter-element', {
             return this.charaterElement;
         },
         frontcoverColor() {
-            return { 'background-image': `url(${this.charaterElement.img})` }
+            return {
+                'background-image': `url(${this.charaterElement.img})`
+            }
         },
     }
 });

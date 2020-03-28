@@ -33,7 +33,7 @@
             </transition>
         </div>
 
-        <el-drawer size="50% " style="overflow:scroll " :title="storyTargtDec.coverName " :visible.sync="drawerStory
+        <el-drawer size="100% " style="overflow:scroll " :title="storyTargtDec.coverName " :visible.sync="drawerStory
             " :direction="direction " :before-close="handleClose ">
             <div class="story_draw ">
                 <pre>{{storyTargtDec.storyintroduction}}</pre>
@@ -47,7 +47,8 @@
 
 
 
-        <el-dialog :title="storyTargtDec.coverName " :visible.sync="dialogVisible " width="90% " :before-close="handleClose ">
+        <el-dialog :title="storyTargtDec.coverName " :visible.sync="dialogVisible " width="90% "
+            :before-close="handleClose ">
 
             <el-tabs @tab-click="handleClick2 " v-model="activeName ">
                 <el-tab-pane :name="targetset.labelNam " :label="targetset.labelName " v-for="(targetset,key1) in charaterList
@@ -76,8 +77,9 @@
 
                     <div class="bookshore" v-show="show">
                         <single-book v-for="(bookItem,key2) in targetset.storysDetail " :background-image="bookItem.backgroundImage
-            " :cover-name-Orign="bookItem.coverName " :story-introduction="bookItem.storyintroduction " :book-key="bookItem.keyfram "
-                            :link-url="bookItem.linkurl " v-on:click-story="storyPaper " v-on:click-char="charater "></single-book>
+            " :cover-name-Orign="bookItem.coverName " :story-introduction="bookItem.storyintroduction "
+                            :book-key="bookItem.keyfram " :link-url="bookItem.linkurl " v-on:click-story="storyPaper "
+                            v-on:click-char="charater "></single-book>
                     </div>
                 </transition>
 
@@ -88,9 +90,6 @@
     </div>
 
     <script>
-
-
-
         var app = new Vue({
             el: '#app',
 
@@ -103,7 +102,7 @@
                 storyTarget: [0, 0],
                 charaterList: [],
                 drawerStory: false,
-                activeNameTab: '水中央',
+                activeNameTab: '其他系列',
                 eventset: {
                     'opacity': 1
                 },
@@ -120,7 +119,8 @@
                     this.storyTarget = covername.split('-');
                     // this.storyTitle = this.storySerise[this.storyTarget[0] - 1].storysDetail[this.storyTarget[1] - 1].coverName;
                     // this.storyTargtDec = this.storySerise[this.storyTarget[0] - 1].storysDetail[this.storyTarget[1] - 1].storyintroduction;
-                    this.storyTargtDec = this.storySerise[this.storyTarget[0] - 1].storysDetail[this.storyTarget[1] - 1];
+                    this.storyTargtDec = this.storySerise[this.storyTarget[0] - 1].storysDetail[this
+                        .storyTarget[1] - 1];
                     this.storyimg = {
                         'background-image': `url(${this.storyTargtDec.backgroundImage})`
                     };
@@ -134,17 +134,17 @@
                     if (this.storySerise[this.storyTarget[0] - 1].chaterSame == true) {
                         this.activeName = "0";
                         this.charaterList = this.storySerise[this.storyTarget[0] - 1].chaterAll
-                    }
-                    else {
+                    } else {
                         this.activeName = "0";
-                        this.charaterList = this.storySerise[this.storyTarget[0] - 1].storysDetail[this.storyTarget[1] - 1].charterList
+                        this.charaterList = this.storySerise[this.storyTarget[0] - 1].storysDetail[this
+                            .storyTarget[1] - 1].charterList
                     }
                     this.dialogVisible = true;
                 },
                 handleClose(done) {
                     done();
                 },
-                handleClick2(tab, event) { },
+                handleClick2(tab, event) {},
                 handleClick(tab, event) {
                     if (tab.label != this.activeNameTab) {
 
@@ -154,15 +154,19 @@
                         let vm = this;
 
                         new Promise((resolve, reject) => {
-                            vm.show = false
+                                vm.show = false
 
-                            resolve();
-                        }).then(() => {
-                            setTimeout(() => { vm.activeNameTab = tab.label; }, 500);
-                        })
+                                resolve();
+                            }).then(() => {
+                                setTimeout(() => {
+                                    vm.activeNameTab = tab.label;
+                                }, 500);
+                            })
                             .then(() => {
                                 // 
-                                setTimeout(() => { vm.show = true; }, 500);
+                                setTimeout(() => {
+                                    vm.show = true;
+                                }, 500);
                             })
 
 
@@ -172,7 +176,6 @@
 
             }
         })
-
     </script>
 </body>
 

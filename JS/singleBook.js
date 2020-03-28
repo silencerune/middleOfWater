@@ -1,4 +1,3 @@
-
 //  <div class="leftcover">
 
 // </div>
@@ -17,7 +16,7 @@ let templatecode = `
                 <div class="titleimage" v-bind:style="frontcoverColor"></div>
               
                 <div class="booktitleonfront" style="color: goldenrod;">
-                <b>`+ '${coverName}' + `</b>
+                <b>` + '${coverName}' + `</b>
                 </div>
               
             </div>
@@ -37,7 +36,7 @@ let templatecode = `
             <span class="coverimagetext">人物一覽</span>
         </div>
         <div class="booktitle" @click="$emit('click-story',  bookKeyToken)">
-            <b>`+ '${coverName}' + `</b>
+            <b>` + '${coverName}' + `</b>
         </div>
         <div class="plane bookback">
 
@@ -55,14 +54,15 @@ let templatecode = `
 </div>
 `;
 Vue.component('single-book', {
-    template: templatecode
-    ,
+    template: templatecode,
     props: ['backgroundImage', 'coverNameOrign', 'storyIntroduction', 'bookKey', 'linkUrl'],
     delimiters: ['${', '}'],
     data: function () {
         return {
             avitve: false,
-            coverEvent: { transform: '' },
+            coverEvent: {
+                transform: ''
+            },
             bookKeyToken: this.bookKey,
             storyintroductiontext: this.storyIntroduction,
             frontcoverColor: {
@@ -74,13 +74,27 @@ Vue.component('single-book', {
                 'border-right': 'solid 1px #205060',
                 'z-index': '-9'
             },
-            coverImagePic: { 'background-image': `url(${this.backgroundImage})` },
+            coverImagePic: {
+                'background-image': `url(${this.backgroundImage})`
+            },
             coverName: this.coverNameOrign,
             linkurlBaha: this.linkUrl,
-            page1: { transform: '', 'z-index': 2 },
-            page2: { transform: '', 'z-index': 2, },
-            page3: { transform: '', 'z-index': 2, },
-            page4: { transform: '', 'z-index': 2, },
+            page1: {
+                transform: '',
+                'z-index': 2
+            },
+            page2: {
+                transform: '',
+                'z-index': 2,
+            },
+            page3: {
+                transform: '',
+                'z-index': 2,
+            },
+            page4: {
+                transform: '',
+                'z-index': 2,
+            },
             openBookActive: false,
             timeTip: 250,
             clickAble: true,
@@ -102,8 +116,7 @@ Vue.component('single-book', {
                 if (this.openBookActive == false) {
                     this.avitve = true;
                     this.openBook();
-                }
-                else {
+                } else {
                     this.avitve = true;
                     this.closeBook();
                 }

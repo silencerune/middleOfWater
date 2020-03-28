@@ -3,7 +3,7 @@ let bookData_middleWater = [
     {
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/75/0003107775.PNG",
         coverName: "水中央",
-        keyfram: '1-1',
+        keyfram: '3-1',
         linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=343422',
         storyintroduction: `
         小島上 水中央\n
@@ -15,7 +15,7 @@ let bookData_middleWater = [
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/10/0003893810.JPG",
         coverName: "諸羅災誌",
         linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=361590',
-        keyfram: '1-2',
+        keyfram: '3-2',
         storyintroduction: `
         小島上 水中央\n
         相異的語言  不同的文化\n
@@ -30,7 +30,7 @@ let bookData_middleWater = [
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/71/0003911471.JPG",
         coverName: "竊凝語",
         linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=394335',
-        keyfram: '1-3',
+        keyfram: '3-3',
         storyintroduction: `
         大樓高築，世界的語言相互影響，\n
         有誰在高樓之上詛咒了世界，\n
@@ -45,14 +45,14 @@ let bookData_middleWater = [
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/14/0004293114.JPG",
         coverName: "狐與虎",
         linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=384153',
-        keyfram: '1-4',
+        keyfram: '3-4',
         storyintroduction: `二郎神與狐仙的放閃生活`,
     },
     {
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/96/0003036396.PNG",
         linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=343423',
         coverName: "番外篇",
-        keyfram: '1-5',
+        keyfram: '3-5',
         storyintroduction: `水中央系列的番外篇`,
     },
 
@@ -87,13 +87,26 @@ let bookData_crossTheWindow = [
 
 ];
 
-let bookData_short = [
+let bookData_short = [{
+        backgroundImage: "img/head/2020-03-21_202905.png",
+        coverName: `三十歲魔法師捍衛戰`,
+        linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=453229',
+        keyfram: '1-1',
+        storyintroduction: `
+        各類藥材，一瓢忘川水，\n
+        熬煮出忘卻一切的孟婆湯，\n
+        這，是一生的終點，\n
+        卻也是一生的起點\n
+        `,
+        charterList: [sort_thirty]
+
+    },
 
     {
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/77/0003467877.JPG",
         coverName: "忘川水",
         linkurl: 'https://home.gamer.com.tw/creationDetail.php?sn=3467877',
-        keyfram: '3-1',
+        keyfram: '1-2',
         storyintroduction: `
         各類藥材，一瓢忘川水，\n
         熬煮出忘卻一切的孟婆湯，\n
@@ -107,7 +120,7 @@ let bookData_short = [
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/98/0003596298.JPG",
         linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=383445',
         coverName: "先知日常",
-        keyfram: '3-2',
+        keyfram: '1-3',
         storyintroduction: `先知日常`,
         charterList: [sort_xeniji]
     },
@@ -115,7 +128,7 @@ let bookData_short = [
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/01/0003683401.JPG",
         linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=390202',
         coverName: "姊夫妹婿",
-        keyfram: '3-3',
+        keyfram: '1-4',
         storyintroduction: `差了20歲的姊夫與妹婿的歡樂日常`,
         charterList: [sort_hasbend]
     },
@@ -123,7 +136,7 @@ let bookData_short = [
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/95/0003590095.JPG",
         coverName: "雙婚契",
         linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=383661',
-        keyfram: '3-4',
+        keyfram: '1-5',
         storyintroduction: `
         死生契闊，與子成說，真誠的誓言卻不被世界承認，\n
         執子之手，與子偕老，病魔卻讓一方即將遠走，\n
@@ -137,23 +150,23 @@ let bookData_short = [
 
 /*=================================================================================== */
 var allSerise = [{
-    labelName: '水中央系列',
-    chaterSame: true,
-    chaterAll: charater_middleWater,
-    storysDetail: bookData_middleWater,
-},
-{
-    labelName: '屏幕那端系列',
-    chaterSame: true,
-    storysDetail: bookData_crossTheWindow,
-    chaterAll: charater_crosswindow
+        labelName: '其他系列',
+        chaterSame: false,
+        storysDetail: bookData_short,
+    }, {
+        labelName: '水中央系列',
+        chaterSame: true,
+        chaterAll: charater_middleWater,
+        storysDetail: bookData_middleWater,
+    },
+    {
+        labelName: '屏幕那端系列',
+        chaterSame: true,
+        storysDetail: bookData_crossTheWindow,
+        chaterAll: charater_crosswindow
 
-},
-{
-    labelName: '短篇集',
-    chaterSame: false,
-    storysDetail: bookData_short,
-},
+    },
+
 
 
 ]

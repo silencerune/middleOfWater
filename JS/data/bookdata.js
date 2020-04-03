@@ -93,10 +93,14 @@ let bookData_short = [{
         linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=453229',
         keyfram: '1-1',
         storyintroduction: `
-        各類藥材，一瓢忘川水，\n
-        熬煮出忘卻一切的孟婆湯，\n
-        這，是一生的終點，\n
-        卻也是一生的起點\n
+        傳聞說，若三十歲還是處男，
+        就會變成魔法師，現實是還需要經過國家考試，
+        國防部下的秘密部隊–魔法師軍隊
+        即便是新丁也有百萬年薪，
+        然而林穿楊卻在拿到執照的當天，
+        家中闖入三個自稱的婚約者，
+        面對人生中，最大的危機
+
         `,
         charterList: [sort_thirty]
 

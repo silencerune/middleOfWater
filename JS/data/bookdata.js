@@ -3,7 +3,7 @@ let bookData_middleWater = [
     {
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/75/0003107775.PNG",
         coverName: "水中央",
-        keyfram: '3-1',
+        keyfram: '2-1',
         linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=343422',
         storyintroduction: `
         小島上 水中央\n
@@ -15,7 +15,7 @@ let bookData_middleWater = [
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/10/0003893810.JPG",
         coverName: "諸羅災誌",
         linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=361590',
-        keyfram: '3-2',
+        keyfram: '2-2',
         storyintroduction: `
         小島上 水中央\n
         相異的語言  不同的文化\n
@@ -30,7 +30,7 @@ let bookData_middleWater = [
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/71/0003911471.JPG",
         coverName: "竊凝語",
         linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=394335',
-        keyfram: '3-3',
+        keyfram: '2-3',
         storyintroduction: `
         大樓高築，世界的語言相互影響，\n
         有誰在高樓之上詛咒了世界，\n
@@ -45,14 +45,14 @@ let bookData_middleWater = [
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/14/0004293114.JPG",
         coverName: "狐與虎",
         linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=384153',
-        keyfram: '3-4',
+        keyfram: '2-4',
         storyintroduction: `二郎神與狐仙的放閃生活`,
     },
     {
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/96/0003036396.PNG",
         linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=343423',
         coverName: "番外篇",
-        keyfram: '3-5',
+        keyfram: '2-5',
         storyintroduction: `水中央系列的番外篇`,
     },
 
@@ -67,7 +67,7 @@ let bookData_crossTheWindow = [
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/02/0003423702.JPG",
         coverName: "幽靈學長",
         linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=351991',
-        keyfram: '2-1',
+        keyfram: '3-1',
         storyintroduction: `
         卒於民國78年的學長，
         為了追求新知與參與考試，
@@ -78,7 +78,7 @@ let bookData_crossTheWindow = [
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/46/0004486046.JPG",
         coverName: "屏幕那端",
         linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=294136',
-        keyfram: '2-2',
+        keyfram: '3-2',
         storyintroduction: `
         名為許 千菱的工程師之日常\n
         包括日常漫畫\n

@@ -9,11 +9,16 @@ let templaterCodeCharter = `
 :title=" charaterListElement.name"
 :visible.sync="drawer"
 :direction="direction"
-size="100%"
+size="90%"
 style="font-size:54px;text-align:left;"
 :before-close="handleClose" over>
-<div class="charaitem"  style="width:500px;height:500px;font-size:54px;" v-bind:style="frontcoverColor"></div>
-<pre>
+<div class="charaitem"  style="    width: 250;
+height: 250;
+font-size: 54px;
+position: absolute;
+right: 0px;
+top: 0px;" v-bind:style="frontcoverColor"></div>
+<pre style="font-size: 32px;">
 ` + '${charaterListElement.discrip}' + `
 </pre>
 </el-drawer>

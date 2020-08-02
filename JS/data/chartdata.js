@@ -66,8 +66,8 @@ let charater_middleWater = [{
 `,
             }, {
                 name: "趙 凜德",
-                img: 'img/head/north06-du.png',
-                bodyimg: 'img/body/north06-du.jpg',
+                img: 'https://p2.bahamut.com.tw/HOME/creationCover/57/0003899657.JPG',
+
                 discrip: `
 零期仙班出身，官位城隍。\n
 出生帝王之家但母親是棄妃，善交際與談判，\n
@@ -79,7 +79,7 @@ let charater_middleWater = [{
 `,
             }, {
                 name: "李 正成",
-                img: 'img/head/north03-lee.png',
+                img: 'https://p2.bahamut.com.tw/HOME/creationCover/10/0003765810.JPG',
                 discrip: `
 物妖，正成牌腳踏車，\n
 北災禍第三候補，生於四六事件，\n
@@ -96,8 +96,7 @@ let charater_middleWater = [{
 `,
             }, {
                 name: "陳 緝示",
-                img: 'img/head/north16-chan.png',
-                bodyimg: 'img/body/north16-chan.jpg',
+                img: 'https://p2.bahamut.com.tw/HOME/creationCover/50/0003853150.JPG',
                 discrip: `
 物妖，日本警刀，北災禍第十六候補，生於基隆大屠殺，\n
 其主陳緝示為了爭取市民安全，隻身對抗了拿槍的官兵，\n
@@ -408,6 +407,14 @@ Sipita maca 繼承者，能靠視線殺死生物，\n
     神警醫療部隊，聖經神話大天使，\n
     曾到蘭嶼島上找神約，跟東災禍主照過面，\n
     目前常駐於中央山脈。
+    `,
+            }, {
+                name: `芙蘿拉\n‧馬偕`,
+                img: 'https://p2.bahamut.com.tw/HOME/creationCover/38/0004019338.JPG',
+                discrip: `
+    從加拿大跟著馬偕來台灣，\n
+    主要活動範圍在大台北地區。\n
+    第一個被寂靜森林奪去聲音的神話生物\n
     `,
             },
 
